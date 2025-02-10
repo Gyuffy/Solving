@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kyuhwan\\source\\repos\\SWEA2383\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86018EC7-D60C-4C01-A8BC-59AB3D4E59F3}|SWEA2383\\SWEA2383.vcxproj|C:\\Users\\Kyuhwan\\source\\repos\\SWEA2383\\SWEA2383\\SWEA2383.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{86018EC7-D60C-4C01-A8BC-59AB3D4E59F3}|SWEA2383\\SWEA2383.vcxproj|solutionrelative:SWEA2383\\SWEA2383.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86018EC7-D60C-4C01-A8BC-59AB3D4E59F3}|SWEA2383\\SWEA2383.vcxproj|C:\\Users\\Kyuhwan\\source\\repos\\SWEA2383\\SWEA2383\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{86018EC7-D60C-4C01-A8BC-59AB3D4E59F3}|SWEA2383\\SWEA2383.vcxproj|solutionrelative:SWEA2383\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 304,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "input.txt",
+              "DocumentMoniker": "C:\\Users\\Kyuhwan\\source\\repos\\SWEA2383\\SWEA2383\\input.txt",
+              "RelativeDocumentMoniker": "SWEA2383\\input.txt",
+              "ToolTip": "C:\\Users\\Kyuhwan\\source\\repos\\SWEA2383\\SWEA2383\\input.txt",
+              "RelativeToolTip": "SWEA2383\\input.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-07T11:50:26.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SWEA2383.cpp",
+              "DocumentMoniker": "C:\\Users\\Kyuhwan\\source\\repos\\SWEA2383\\SWEA2383\\SWEA2383.cpp",
+              "RelativeDocumentMoniker": "SWEA2383\\SWEA2383.cpp",
+              "ToolTip": "C:\\Users\\Kyuhwan\\source\\repos\\SWEA2383\\SWEA2383\\SWEA2383.cpp",
+              "RelativeToolTip": "SWEA2383\\SWEA2383.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAM0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-07T11:50:09.677Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
