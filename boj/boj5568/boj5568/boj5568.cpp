@@ -21,7 +21,7 @@ void dfs(int lev)
 		{
 			result += to_string(path[i]);
 		}
-		
+
 		if (v.size() == 0)
 		{
 			v.push_back(result);
