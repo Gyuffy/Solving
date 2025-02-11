@@ -1,5 +1,6 @@
 ﻿// 민코딩 Backtracking의 탑 7번 프로듀스 101배수
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -20,28 +21,47 @@ void input()
 
 void calculate(int op)
 {
-	if(op == N - 1)
+	if (op == N - 1)
 	{
-		ans = path[0];
+		ans = numbers[0];
 		for (int i = 1; i < N; i++)
 		{
-			if (path[i-1] == 0)
-			{
-				ans += numbers[i];
-			}
-			else if (path[i - 1] == 1)
-			{
-				ans -= numbers[i];
-			}
-			else if (path[i - 1] == 2)
+			if (path[i - 1] == 0)
 			{
 				ans *= numbers[i];
 			}
+			else if (path[i - 1] == 1)
+			{
+				ans += numbers[i];
+			}
+			else if (path[i - 1] == 2)
+			{
+				ans -= numbers[i];
+			}
 		}
 
-		if (ans % 101 == 0)
+		if (ans % 101 == 0 && abs(ans) >= 101)
 		{
-			cout << ans << "\n";
+			for (int i = 0; i < N; i++)
+			{
+				cout << numbers[i];
+				if (i == N - 1)
+				{
+					cout << "\n";
+				}
+				else if (path[i] == 0)
+				{
+					cout << "*";
+				}
+				else if (path[i] == 1)
+				{
+					cout << "+";
+				}
+				else if (path[i] == 2)
+				{
+					cout << "-";
+				}
+			}
 		}
 
 		return;
@@ -57,7 +77,7 @@ void calculate(int op)
 int main()
 {
 	input();
-	calculate(N - 1);
+	calculate(0);
 
 	return 0;
 }
