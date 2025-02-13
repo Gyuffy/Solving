@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gyuhwan\\Desktop\\Solving\\SWEA\\SWEA1767\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8C59019-FB09-4846-8D98-5F9C7D9FB3C5}|SWEA1767\\SWEA1767.vcxproj|C:\\Users\\Gyuhwan\\Desktop\\Solving\\SWEA\\SWEA1767\\SWEA1767\\SWEA1767.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8C59019-FB09-4846-8D98-5F9C7D9FB3C5}|SWEA1767\\SWEA1767.vcxproj|solutionrelative:SWEA1767\\SWEA1767.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8C59019-FB09-4846-8D98-5F9C7D9FB3C5}|SWEA1767\\SWEA1767.vcxproj|C:\\Users\\Gyuhwan\\Desktop\\Solving\\SWEA\\SWEA1767\\SWEA1767\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E8C59019-FB09-4846-8D98-5F9C7D9FB3C5}|SWEA1767\\SWEA1767.vcxproj|solutionrelative:SWEA1767\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 312,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SWEA1767.cpp",
+              "DocumentMoniker": "C:\\Users\\Gyuhwan\\Desktop\\Solving\\SWEA\\SWEA1767\\SWEA1767\\SWEA1767.cpp",
+              "RelativeDocumentMoniker": "SWEA1767\\SWEA1767.cpp",
+              "ToolTip": "C:\\Users\\Gyuhwan\\Desktop\\Solving\\SWEA\\SWEA1767\\SWEA1767\\SWEA1767.cpp",
+              "RelativeToolTip": "SWEA1767\\SWEA1767.cpp",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAAANUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-13T10:11:45.681Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 88,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "input.txt",
+              "DocumentMoniker": "C:\\Users\\Gyuhwan\\Desktop\\Solving\\SWEA\\SWEA1767\\SWEA1767\\input.txt",
+              "RelativeDocumentMoniker": "SWEA1767\\input.txt",
+              "ToolTip": "C:\\Users\\Gyuhwan\\Desktop\\Solving\\SWEA\\SWEA1767\\SWEA1767\\input.txt",
+              "RelativeToolTip": "SWEA1767\\input.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-13T10:13:06.906Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -13,7 +13,11 @@ void func(int lev, int from)
 		{
 			if (i == M - 1)
 			{
+<<<<<<< HEAD
 				cout << path[i];3
+=======
+				cout << path[i];
+>>>>>>> 985b541246dd4bc51700f0fcae36b9e02669a82a
 			}
 			else
 			{
