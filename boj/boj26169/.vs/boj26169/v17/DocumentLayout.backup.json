@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gyuhwan\\Desktop\\Solving\\boj\\boj26169\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C649132-672B-4B3A-BA7D-B815CCD9335C}|boj26169\\boj26169.vcxproj|C:\\Users\\Gyuhwan\\Desktop\\Solving\\boj\\boj26169\\boj26169\\boj26169.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9C649132-672B-4B3A-BA7D-B815CCD9335C}|boj26169\\boj26169.vcxproj|solutionrelative:boj26169\\boj26169.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C649132-672B-4B3A-BA7D-B815CCD9335C}|boj26169\\boj26169.vcxproj|C:\\Users\\Gyuhwan\\Desktop\\Solving\\boj\\boj26169\\boj26169\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9C649132-672B-4B3A-BA7D-B815CCD9335C}|boj26169\\boj26169.vcxproj|solutionrelative:boj26169\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 472,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "boj26169.cpp",
+              "DocumentMoniker": "C:\\Users\\Gyuhwan\\Desktop\\Solving\\boj\\boj26169\\boj26169\\boj26169.cpp",
+              "RelativeDocumentMoniker": "boj26169\\boj26169.cpp",
+              "ToolTip": "C:\\Users\\Gyuhwan\\Desktop\\Solving\\boj\\boj26169\\boj26169\\boj26169.cpp",
+              "RelativeToolTip": "boj26169\\boj26169.cpp",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-13T14:44:04.075Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 151,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "input.txt",
+              "DocumentMoniker": "C:\\Users\\Gyuhwan\\Desktop\\Solving\\boj\\boj26169\\boj26169\\input.txt",
+              "RelativeDocumentMoniker": "boj26169\\input.txt",
+              "ToolTip": "C:\\Users\\Gyuhwan\\Desktop\\Solving\\boj\\boj26169\\boj26169\\input.txt",
+              "RelativeToolTip": "boj26169\\input.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-13T15:06:28.951Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
