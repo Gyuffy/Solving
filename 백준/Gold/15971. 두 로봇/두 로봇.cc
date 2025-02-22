@@ -44,24 +44,27 @@ void dfs(int cur, int dist, int max_val)
 		int next = way[cur][i].to;
 		if (visited[next] == 1)
 			continue;
-		if (way[cur][i].cost > max_val)
-		{
-			max_val = way[cur][i].cost;
-		}
-		dist += way[cur][i].cost;
 		visited[next] = 1;
-		dfs(next, dist, max_val);
+		dfs(next, dist + way[cur][i].cost, max_val > way[cur][i].cost ? max_val : way[cur][i].cost);
 		visited[next] = 0;
-		dist -= way[cur][i].cost;
 	}
 }
 
 
 int main()
 {
+	cin.tie(NULL);
+	ios::sync_with_stdio(false);
 	// freopen("sample_input.txt", "r", stdin);
 	input();
-	dfs(st_a, 0, 0);
+	if (st_a == st_b || N == 1)
+	{
+		min_dist = max_dist;
+	}
+	else
+	{
+		dfs(st_a, 0, 0);
+	}
 	min_dist = min_dist - max_dist;
 
 	cout << min_dist << "\n";
