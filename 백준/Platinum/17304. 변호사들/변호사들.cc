@@ -22,7 +22,7 @@ bool dfs(int now, int prv)
 
 	for (int nxt : v[now])
 	{
-		if (nxt == prv) 
+		if (nxt == prv)
 			continue;
 		if (dfs(nxt, now))
 			is_cycle = true;
@@ -57,7 +57,7 @@ int main()
 
 	// visited 배열 초기화 및 크기 할당
 	visited.assign(n + 1, 0);
-	
+
 	for (int i = 0; i < m; i++)
 	{
 		int from, to;
@@ -82,7 +82,7 @@ int main()
 	}
 
 	vector<vector<int>> copy_v(n + 1);
-	for (auto &p : two_way)
+	for (auto& p : two_way)
 	{
 		int a = p.first;
 		int b = p.second;
