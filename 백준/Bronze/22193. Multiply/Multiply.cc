@@ -1,42 +1,92 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// ---- 자리수 곱셈 O(N*M) ----
+const int MOD = 998244353;   // 119·2^23 + 1
+const int G   = 3;
+
+long long mod_pow(long long a, long long e) {
+    long long r = 1;
+    while (e) {
+        if (e & 1) r = r * a % MOD;
+        a = a * a % MOD;
+        e >>= 1;
+    }
+    return r;
+}
+
+void ntt(vector<int>& a, bool invert) {
+    int n = (int)a.size();
+
+    // bit-reverse
+    for (int i = 1, j = 0; i < n; ++i) {
+        int bit = n >> 1;
+        for (; j & bit; bit >>= 1) j ^= bit;
+        j ^= bit;
+        if (i < j) swap(a[i], a[j]);
+    }
+
+    for (int len = 2; len <= n; len <<= 1) {
+        long long wlen = mod_pow(G, (MOD - 1) / len);
+        if (invert) wlen = mod_pow(wlen, MOD - 2);   // wlen^{-1}
+
+        for (int i = 0; i < n; i += len) {
+            long long w = 1;
+            for (int j = 0; j < len / 2; ++j) {
+                int u = a[i + j];
+                int v = int(a[i + j + len / 2] * 1LL * w % MOD);
+                a[i + j]             = (u + v < MOD) ? u + v : u + v - MOD;
+                a[i + j + len / 2]   = (u - v >= 0) ? u - v : u - v + MOD;
+                w = w * wlen % MOD;
+            }
+        }
+    }
+    if (invert) {
+        long long inv_n = mod_pow(n, MOD - 2);
+        for (int &x : a) x = int(x * inv_n % MOD);
+    }
+}
+
+vector<int> multiply_bigints(const string& A, const string& B) {
+    if (A == "0" || B == "0") return {0};
+
+    int n = (int)A.size(), m = (int)B.size();
+    int N = 1; while (N < n + m) N <<= 1;
+
+    vector<int> fa(N), fb(N);
+    for (int i = 0; i < n; ++i) fa[i] = A[n - 1 - i] - '0';
+    for (int i = 0; i < m; ++i) fb[i] = B[m - 1 - i] - '0';
+
+    ntt(fa, false);
+    ntt(fb, false);
+    for (int i = 0; i < N; ++i) fa[i] = int(1LL * fa[i] * fb[i] % MOD);
+    ntt(fa, true);
+
+    // 양수 보정 후 10진수 캐리
+    long long carry = 0;
+    for (int i = 0; i < N; ++i) {
+        long long cur = (fa[i] + MOD) % MOD + carry;   // MOD보다 확실히 작음
+        fa[i] = int(cur % 10);
+        carry = cur / 10;
+    }
+    while (carry) {
+        fa.push_back(int(carry % 10));
+        carry /= 10;
+    }
+    while (fa.size() > 1 && fa.back() == 0) fa.pop_back();
+    reverse(fa.begin(), fa.end());
+    return fa;
+}
+
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int N, M;          // 첫 줄: 각 수의 자리수
-    string A, B;       // 두 번째·세 번째 줄: 실제 숫자
-    cin >> N >> M;
-    cin >> A >> B;
+    int N, M;
+    string A, B;
+    cin >> N >> M >> A >> B;
 
-    // 둘 중 하나가 0이면 바로 종료
-    if (A == "0" || B == "0") {
-        cout << 0 << '\n';
-        return 0;
-    }
-
-    // 결과 자릿수는 최대 N+M
-    vector<int> res(N + M, 0);
-
-    // 끝자리부터 손곱셈 (A[i]*B[j] → res[i+j+1])
-    for (int i = N - 1; i >= 0; --i) {
-        int da = A[i] - '0';
-        for (int j = M - 1; j >= 0; --j) {
-            int db = B[j] - '0';
-            int idx = i + j + 1;
-
-            int sum = da * db + res[idx];
-            res[idx]     = sum % 10;      // 현재 자리
-            res[idx - 1] += sum / 10;     // 올림
-        }
-    }
-
-    // 출력: 맨 앞의 0은 생략
-    int pos = 0;
-    while (pos < (int)res.size() && res[pos] == 0) ++pos;
-    for (; pos < (int)res.size(); ++pos) cout << res[pos];
+    vector<int> ans = multiply_bigints(A, B);
+    for (int d : ans) cout << d;
     cout << '\n';
     return 0;
 }
