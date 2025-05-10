@@ -23,7 +23,6 @@ bool has_duplicate(int len)
     ull hash1 = 0, hash2 = 0;
     ull power1 = 1, power2 = 1;
 
-    // 초기 해시 및 멱수 준비
     for (int i = 0; i < len; i++)
     {
         hash1 = (hash1 * BASE1 + S[i]) % MOD1;
@@ -39,7 +38,6 @@ bool has_duplicate(int len)
 
     for (int i = len; i < L; i++)
     {
-        // 해시 갱신
         hash1 = (hash1 + MOD1 - (S[i - len] * power1) % MOD1) % MOD1;
         hash1 = (hash1 * BASE1 + S[i]) % MOD1;
 
