@@ -23,7 +23,6 @@ int main()
         cout << cur;
     }
     cout << '\n';
-    return 0;
 
 	return 0;
 }
